@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>IE6 IE7 IE8 IE9 IE10 Css</title>
+<style type="text/css">
+	h2{
+		margin:20px 0;
+		padding:20px;
+		border-bottom:5px solid #ccc;
+		background-color:#ccc;
+	}
+	.ie6{color:red;}
+	.ie7{color:orange;}
+	.ie8{color:yellow;}
+	.ie9{color:green;}
+	.ie10{color:purple;}
+	h4{
+		background:cyan;  /*--ie11--*/
+		background:green\9\0;  /*--ie9 ie10--*/
+		background:yellow\0/;  /*--ie8--*/
+		+background:orange;  /*--ie7--*/
+		_background:red; /*--ie6--*/
+	}
+</style>
+</head>
+<body>
+<h1>Browser hack</h1>
+<h2>1. IE6,IE7,IE8,IE9 Css hacks easy</h2>
+<h3 class="ie6">IE6</h3>
+<h3 class="ie7">IE7</h3>
+<h3 class="ie8">IE8</h3>
+<h3 class="ie9">IE9/10</h3>
+<h4>Color</h4>
+
+<h2>2. IE6,IE7,IE8,IE9, IE10 Css hacks by <a href="http://dimox.net/personal-css-hacks-for-ie6-ie7-ie8/">Dimox</a></h2>
+<style type="text/css">
+.ie6, .ie7, .ie8, .ie9, .ie10 {display: none}
+
+/* IE 6 */
+* html .notie {display: none}
+* html .ie6 {display: block}
+
+/* IE 7 */
+*+html .notie {display: none}
+*+html .ie7 {display: block}
+
+/* IE 8 */
+@media \0screen {
+	.notie {display: none}
+	.ie8 {display: block}
+}
+
+/* IE 9 */
+:root .notie {display: none\9}
+:root .ie9 {display: block\9}
+
+/* IE 10 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.notie, .ie9 {display: none !important}
+	.ie10 {display: block}
+}
+</style>
+<div class="notie">Your browser is <strong>not Internet Explorer</strong></div>
+<div class="ie6">Your browser - <strong>Internet Explorer 6</strong></div>
+<div class="ie7">Your browser - <strong>Internet Explorer 7</strong></div>
+<div class="ie8">Your browser - <strong>Internet Explorer 8</strong></div>
+<div class="ie9">Your browser - <strong>Internet Explorer 9</strong></div>
+<div class="ie10">Your browser - <strong>Internet Explorer 10</strong></div>
+</body>
+</html>
