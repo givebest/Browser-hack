@@ -5,6 +5,7 @@ To distinguish ie6 ie7 ie8 ie9 ie10
 使用CSS Hack 来区分IE6,IE7,IE8,IE9,IE10
 
 ## 第一种简单点
+#### 只能区分IE6,IE7,IE8,IE9+版本
 
 ````html
 h4{
@@ -17,6 +18,7 @@ h4{
 ````
 
 ## 第二种复杂点
+#### 可以精确区分IE6－IE10的每一个版本 by Dimox http://dimox.net/personal-css-hacks-for-ie6-ie7-ie8/
 
 ````html
 /* IE 6 */
