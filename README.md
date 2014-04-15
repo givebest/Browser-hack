@@ -20,7 +20,7 @@ h4{
 ## 第二种复杂点
 #### 可以精确区分IE6－IE10的每一个版本 by Dimox http://dimox.net/personal-css-hacks-for-ie6-ie7-ie8/
 
-````html
+````css
 /* IE 6 */
 * html .notie {display: none}
 * html .ie6 {display: block}
