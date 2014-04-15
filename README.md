@@ -7,7 +7,7 @@ To distinguish ie6 ie7 ie8 ie9 ie10
 ## 第一种简单点
 #### 只能区分IE6,IE7,IE8,IE9+版本
 
-````html
+````css
 h4{
 		background:cyan;  /*--ie11--*/
 		background:green\9\0;  /*--ie9 ie10--*/
